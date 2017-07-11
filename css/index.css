@@ -8,12 +8,11 @@ body {
 }
 
 .fiftyfifty {
-	width: 100%;
+	width: 0%;
 	position: fixed;
-	height: 1%;
+	height: 100%;
 	background-color: #e2e2e2;
-	right: 11px;
-	z-index: -1;
+	right: 0px;
 }
 
 /* MENU MENU */
@@ -21,14 +20,15 @@ body {
 	position: fixed;
 	font-size: 29px;
 	text-align: center;
-	/*border: 2px solid red;	*/
+	//border: 2px solid red;
+	line-height: 21px;
 }
 
 .navi a {
 	text-decoration: none;
 	font-family: EskapadeFraktur-Regular;
 	color: blue;
-	padding: 5px 6px 2px 6px;
+	padding: 1px 4px 1px 4px;
 }
 
 .navi a:hover {
@@ -41,18 +41,18 @@ body {
 
 #work {
 	width: 100%;
-	top: 33px;
+	top: 49px;
 }
 
 #instagram {
-	bottom: 33px;
+	bottom: 51px;
 	width: 100%;
 }
 
 #about {
 	transform: rotate(90deg);
 	top: 47%;
-	left: 26px;
+	left: 30px;
 	width: auto;
 	height: auto;
 }
@@ -62,34 +62,22 @@ body {
 	text-decoration: line-through;
 }
 
-
 #work a:hover {
 	text-shadow: none;
-	animation: rotation2 .1s infinite cubic-bezier(0,1.4,.58,.77);
-
+	animation: flicker .1s infinite alternate cubic-bezier(0,1.4,.58,.77);
 }
 
 #contact {
 	transform: rotate(-90deg);
 	top: 47%;
-	right: 20px;
+	right: 23px;
 	width: auto;
 	height: auto;
 }
 /* //MENU MENU */
 
 
-@keyframes rotation {
-	0% {color: blue;}
-	16% {color: cyan;}
-	30% {color: greenyellow;}
-	45% {color: yellow;}
-	58% {color: orange;}
-	73% {color: red;}
-	100% {color: blueviolet;}
-}
-
-@keyframes rotation2 {
+@keyframes flicker {
 	from {color: white;}
 	to {color: blue;}
 }
