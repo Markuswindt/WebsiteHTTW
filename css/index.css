@@ -4,7 +4,9 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: url(../images/tp.gif)
+	font-family: EskapadeFraktur-Regular;
+	background-color:#EFEFEF;
+	background: url(../images/tp2.gif)
 }
 
 /* SELECTION STYLES */
@@ -29,22 +31,29 @@ h1::selection {
 /* //SELECTION STYLES */
 
 
-/* MENU */
+a {
+	color: black;
+	text-decoration: none;
+}
+
+
 @keyframes flicker {
 	from {color: white;}
 	to {color: blue;}
 }
 
+
+/* MENU */
 .navi {
 	position: fixed;
 	font-size: 29px;
 	text-align: center;
 	line-height: 21px;
+	z-index: 3;
 }
 
 .navi a {
 	text-decoration: none;
-	font-family: EskapadeFraktur-Regular;
 	color: blue;
 	padding: 1px 4px 1px 4px;
 }
@@ -92,19 +101,15 @@ h1::selection {
     visibility: hidden;
 	z-index: -1;
 	font-size: 60px;
-	opacity: 0.8;
-    background-image: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	opacity: 1;
 	position: absolute;
-	
 	height: auto;
-    width: 350px;
-
+    width: 700px;
     left: 50%;
-    margin-left: -175px;
-	bottom: -9px;
+    margin-left: -350px;
+	bottom: -7px;
 	padding: 24px 0px 11px 0px;
+	color: white;
 }
 
 .tooltip:hover .tooltiptext {
@@ -124,10 +129,11 @@ h1 {
 	text-align: center;
 	font-family: EskapadeFraktur-Regular;
 	color: black;
-	font-size: 122px;
+	font-size: 100px;
 	line-height: 126px;
 	font-weight: normal;
 	text-shadow: 1px 2px 30px rgba(0,0,0,.4);
+	
 }
 
 h1 a{
@@ -137,7 +143,7 @@ h1 a{
 /* //NAME */
 
 h1 a:hover {
-	color: blue;
+	animation: flicker .1s infinite alternate cubic-bezier(0,1.4,.58,.77);
 }
 /* BG PIC POPUP */
 .bgpic{
@@ -161,6 +167,7 @@ h1 a:hover .bgpic{
     background-color: transparent;
     opacity: 1;
     transform: translate(0, 0px);
+	
 }
 /* //BG PIC POPUP */
 
