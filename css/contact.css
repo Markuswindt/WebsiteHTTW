@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: EskapadeFraktur-Regular;
+	//background: url(../images/tp.gif);
+	background-color:#e2e2e2;
+}
+
+.fiftyfifty {
+	background-color: #ededed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+	z-index: 0;
+	background: url(../images/tp2.gif);
+}
+
+.indicator {
+	/background-color: white;
+    width: 8px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+	z-index: 1;
+	/background: url(../images/tp.gif);
+	/background-size: cover;
+}
+
+@keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+
+/* MENU */
+.navi {
+	position: fixed;
+	font-size: 29px;
+	text-align: center;
+	line-height: 21px;
+	z-index: 2;
+}
+
+.navi a {
+	text-decoration: none;
+	color: blue;
+	padding: 1px 4px 1px 4px;
+}
+
+.navi a:hover {
+	animation: flicker .1s infinite alternate cubic-bezier(0,1.4,.58,.77);
+}
+
+.navi a:visited {
+	color: blue;
+}
+
+#work {
+	width: 100%;
+	top: 49px;
+}
+
+#instagram {
+	bottom: 51px;
+	width: 100%;
+}
+
+#about {
+	transform: rotate(90deg);
+	top: 47%;
+	left: 30px;
+	width: auto;
+	height: auto;
+}
+
+#contact {
+	transform: rotate(-90deg);
+	top: 47%;
+	right: 23px;
+	width: auto;
+	height: auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+	z-index: -1;
+	font-size: 60px;
+	opacity: 1;
+	position: absolute;
+	height: auto;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+	bottom: -7px;
+	padding: 24px 0px 11px 0px;
+	color: white;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/* //MENU */
+
+
+  /* EMAIL */	
+.email {
+    display: block;
+    font-size: 65px;
+    width: 54%;
+    top: 22%;
+    left: 23%;
+    margin:auto;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    height: 50%;
+	z-index: 3;
+}
+
+#hello {
+    top: 45%;
+    padding:22px;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.email:hover{
+    color: white;
+    /outline: 8px dashed blue;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    -moz-transition: 299ms ease-in-out;
+    -o-transition: outline-width 299ms ease-in-out;
+    transition: outline-width 299ms ease-in-out;
+    -webkit-transition: outline-width 299ms ease-in-out;
+}
+
+p1 {
+	color: blue;
+	padding: 6px;
+	animation: flicker .1s infinite alternate cubic-bezier(0,1.4,.58,.77);
+}
+
+p2 {
+	color: white;
+	padding: 6px;
+	/animation: flicker .1s infinite alternate cubic-bezier(0,1.4,.58,.77);
+}
+/* //EMAIL */	
+
+
+/* TEXT */
+.note {
+    width: auto;
+    left:11.6%;
+	margin: auto;
+    top: auto;
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 25px;
+    font-size: 16px;
+ 	bottom: 11%;
+	padding: 22px;
+	z-index: 2;
+}
+
+.note a {
+	text-decoration: none;
+	color: blue;
+}
+
+.note a:hover {
+	animation: flicker .1s infinite alternate cubic-bezier(0,1.4,.58,.77);
+}
+/* //TEXT */
+
+
