@@ -112,19 +112,29 @@ body {
 }
 /* //MENU */
 
-
+.profilbild {
+	height: 60%;
+	width: 50%;
+	margin: auto;
+	margin-top: 23%;
+	background: url(../images/about/222.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 p {
 	z-index: 1;
 	width: 12%;
 	margin: auto;
+	margin-right: 244px;
 	position: relative;
 	opacity: .2;
 }
 
 
 
-/* GIF IMAGE */
+/* GIF IMAGE 
 #image {
   	width: 70%;
 	height: 50%;
@@ -138,7 +148,7 @@ p {
 	transition: height 2.2s;
 	z-index: 2;
 }
-/* ------------------------ */
+ ------------------------ */
 
 
 
