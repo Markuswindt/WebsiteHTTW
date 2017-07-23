@@ -145,22 +145,25 @@ a {
 	right: 0;
 	height: 100%;
 	font-family: 'Source Code Pro', monospace;
+	
 }
 
 
 .text {
 	position: absolute;
 	z-index: 1;
-	width: 50%;
+	width: 60%;
 	left: 17%;
-	height: 500px;
-	margin-top: -250px;
+	margin-top: -220px;
 	top: 50%;
 	text-align: left;
 }
 
-.awards { 
-float: right;
-text-align: right;
-	width: 50%;
+.bolder {
+	font-weight: 600;
+	color: white;
+}
+
+.smaller {
+	font-size: 13px;
 }
