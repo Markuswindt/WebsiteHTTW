@@ -15,11 +15,69 @@ a {
 	text-decoration: none;
 }
 
+/* SELECTION STYLES */
+.selec::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::selection {
+	color: grey;
+}
 
+.selec::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-webkit-selection {
+	color: grey;
+}
+
+.selec::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-moz-selection {
+	color: grey;
+}
+
+.selec::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-o-selection {
+	color: grey;
+}
+/* //SELECTION STYLES */
+
+
+
+/* FLICKER ANIMA */
 @keyframes flicker {
 	from {color: white;}
 	to {color: blue;}
 }
+@-webkit-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-moz-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-o-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+/* //FLICKER ANIMA */
+
 
 
 /* MENU */
@@ -127,9 +185,10 @@ a {
 	width: 90%;
 	left: 5%;
 	text-align: center;
-	font-size: 16.4px;
+	font-size: 16px;
 	font-family: 'Source Code Pro', monospace;
 	text-indent: 6px;
+	font-weight: 600;
 }
 
 .cta a {

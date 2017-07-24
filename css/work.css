@@ -6,9 +6,118 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: "eskapade-fraktur", EskapadeFraktur-Regular, serif;
+	font-family: "eskapade-fraktur", serif;
 	background-color:#EFEFEF;
 }
+
+/* SCROLLBAR */
+::scrollbar
+{
+    width: 4px;
+  	height: 4px; 
+}
+
+::scrollbar-track
+{
+  	background: rgba(0, 0, 0, 0);
+}
+
+::scrollbar-thumb
+{
+  	background: rgba(0, 0, 255, .9);
+}
+
+::-webkit-scrollbar
+{
+    width: 4px;
+  	height: 4px; 
+}
+
+::-webkit-scrollbar-track
+{
+  	background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb
+{
+  	background: rgba(0, 0, 255, .9);
+}
+
+::-moz-scrollbar
+{
+    width: 4px;
+  	height: 4px; 
+}
+
+::-moz-scrollbar-track
+{
+  	background: rgba(0, 0, 0, 0);
+}
+
+::-moz-scrollbar-thumb
+{
+  	background: rgba(0, 0, 255, .9);
+}
+
+::-o-scrollbar
+{
+    width: 4px;
+  	height: 4px; 
+}
+
+::-o-scrollbar-track
+{
+  	background: rgba(0, 0, 0, 0);
+}
+
+::-o-scrollbar-thumb
+{
+  	background: rgba(0, 0, 255, .9);
+}
+/* //SCROLLBAR */
+
+/* SELECTION STYLES */
+.selec::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::selection {
+	color: grey;
+}
+
+.selec::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-webkit-selection {
+	color: grey;
+}
+
+.selec::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-moz-selection {
+	color: grey;
+}
+
+.selec::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-o-selection {
+	color: grey;
+}
+/* //SELECTION STYLES */
+
 
 .fiftyfifty {
 	background-color: #ededed;
@@ -21,10 +130,26 @@ body {
 	background: url(../images/tp2.gif);
 }
 
+
+/* FLICKER ANIMA */
 @keyframes flicker {
 	from {color: white;}
 	to {color: blue;}
 }
+@-webkit-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-moz-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-o-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+/* //FLICKER ANIMA */
+
 
 /* MENU */
 .navi {
@@ -101,6 +226,7 @@ body {
 /* //MENU */
 
 
+/* GALLERY */
 .wrap {
 	*border: 1px dashed black;
 	position: absolute;
@@ -118,7 +244,7 @@ body {
 	*border: 1px dashed black;
 	height: 75%;
 	width: 30%;
-	display:inline-block;
+	display:inline-flex;
     vertical-align:top;
 }
 
@@ -165,7 +291,6 @@ body {
 	background-position: center;
 }
 
-
 .four {
 	margin-left: 30px;
 	background: url(../images/work/iga-1.jpg);
@@ -173,7 +298,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 
 .five {
 	margin-left: 30px;
@@ -208,14 +332,13 @@ body {
 	background-position: center;
 }
 
-.eight {
+.nine {
 	margin-left: 30px;
 	background: url(../images/work/de.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 
 .ten {
 	margin-left: 30px;
@@ -237,27 +360,10 @@ body {
 
 .caption {
 	*border: 1px solid;
-	text-align: center;
 	position: absolute;
 	margin-top: 20%;
 	font-family: 'Source Code Pro', monospace;
 }
+/* //GALLERY */
 
-
-
-::-webkit-scrollbar
-{
-  width: 12px;  /* for vertical scrollbars */
-  height: 4px; /* for horizontal scrollbars */
-}
-
-::-webkit-scrollbar-track
-{
-  background: rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb
-{
-  background: rgba(0, 0, 255, .9);
-}
 

@@ -11,41 +11,74 @@ body {
 	background: url(../images/tp2.gif)
 }
 
-/* SELECTION STYLES */
-body::selection {
-	text-shadow: 3px 3px 0 rgba(176,176,176,1);
-}
-.navi a::selection {
-	text-shadow: 3px 3px 0 rgba(176,176,176,1);
-}
-.navi::selection {
-	text-shadow: 3px 3px 0 rgba(176,176,176,1);
-}
-.tooltiptext::selection {
-	color: grey;
-}
-h1 a::selection {
-	text-shadow: 7px 7px 0 rgba(176,176,176,0.90);
-}
-h1::selection {
-	text-shadow: 7px 7px 0 rgba(176,176,176,0.90);
-}
-.mw::selection {
-	text-shadow: 7px 7px 0 rgba(176,176,176,0.90);
-}
-/* //SELECTION STYLES */
-
-
 a {
 	color: black;
 	text-decoration: none;
 }
 
+/* SELECTION STYLES */
+.selec::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::selection {
+	color: grey;
+}
 
+.selec::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-webkit-selection {
+	color: grey;
+}
+
+.selec::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-moz-selection {
+	color: grey;
+}
+
+.selec::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-o-selection {
+	color: grey;
+}
+/* //SELECTION STYLES */
+
+
+
+
+/* FLICKER ANIMA */
 @keyframes flicker {
 	from {color: white;}
 	to {color: blue;}
 }
+@-webkit-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-moz-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-o-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+/* //FLICKER ANIMA */
 
 
 /* MENU */
@@ -146,11 +179,16 @@ h1 a{
 }
 /* //NAME */
 
+
+/* BG PIC POPUP */
 h1 a:hover {
 	color: white;
 	transition: 150ms ease-in-out;
+	-webkit-transition: 150ms ease-in-out;
+	-moz-transition: 150ms ease-in-out;
+	-o-transition: 150ms ease-in-out;
 }
-/* BG PIC POPUP */
+
 .bgpic{
     position: fixed;
     width: 80%;
@@ -174,13 +212,11 @@ h1 a:hover .bgpic{
     transform: translate(0, 0px);
 	
 }
-/* //BG PIC POPUP */
-
 
 h1 a:hover .mw {
 	animation: flicker .1s infinite alternate cubic-bezier(0,1.4,.58,.77);
 }
-
+/* //BG PIC POPUP */
 
 
 

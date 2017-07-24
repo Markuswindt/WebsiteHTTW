@@ -6,9 +6,76 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: "eskapade-fraktur", EskapadeFraktur-Regular, serif;
+	font-family: "eskapade-fraktur", serif;
 	background-color:#EFEFEF;
 }
+
+
+/* SELECTION STYLES */
+.selec::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::selection {
+	color: grey;
+}
+p1::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+p2::selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+
+.selec::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-webkit-selection {
+	color: grey;
+}
+p1::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+p2::-webkit-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+
+.selec::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-moz-selection {
+	color: grey;
+}
+p1::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+p2::-moz-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+
+.selec::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.selec a::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+.tooltiptext::-o-selection {
+	color: grey;
+}
+p1::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+p2::-o-selection {
+	text-shadow: 3px 3px 0 rgba(176,176,176,1);
+}
+/* //SELECTION STYLES */
 
 
 .fiftyfifty {
@@ -21,10 +88,27 @@ body {
 	background: url(../images/tp2.gif);
 }
 
+
+
+/* FLICKER ANIMA */
 @keyframes flicker {
 	from {color: white;}
 	to {color: blue;}
 }
+@-webkit-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-moz-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+@-o-keyframes flicker {
+	from {color: white;}
+	to {color: blue;}
+}
+/* //FLICKER ANIMA */
+
 
 /* MENU */
 .navi {
@@ -155,7 +239,7 @@ p2 {
 /* TEXT */
 .note {
     width: 41.5%;
-	/background-color: white;
+	*background-color: white;
     position: absolute;
 	bottom: 7%;
 	left: 5%;
