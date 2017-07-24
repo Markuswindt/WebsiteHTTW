@@ -6,7 +6,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: EskapadeFraktur-Regular;
+	font-family: "eskapade-fraktur", EskapadeFraktur-Regular, serif;
 	background-color:#EFEFEF;
 }
 
@@ -219,7 +219,7 @@ body {
 
 .ten {
 	margin-left: 30px;
-	background: url(../images/work/moritz.jpg);
+	background: url(../images/work/Moritz.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -227,7 +227,7 @@ body {
 
 .eleven {
 	margin-left: 30px;
-	background: url(../images/work/david.jpg);
+	background: url(../images/work/David.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;

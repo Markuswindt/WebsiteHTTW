@@ -6,7 +6,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: EskapadeFraktur-Regular;
+	font-family: "eskapade-fraktur", EskapadeFraktur-Regular, serif;
 	background-color:#EFEFEF;
 }
 

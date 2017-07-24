@@ -1,10 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400');
+
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: EskapadeFraktur-Regular;
+	font-family: "eskapade-fraktur", serif;
 	background-color:#EFEFEF;
 	background: url(../images/tp2.gif)
 }
@@ -26,6 +28,9 @@ h1 a::selection {
 	text-shadow: 7px 7px 0 rgba(176,176,176,0.90);
 }
 h1::selection {
+	text-shadow: 7px 7px 0 rgba(176,176,176,0.90);
+}
+.mw::selection {
 	text-shadow: 7px 7px 0 rgba(176,176,176,0.90);
 }
 /* //SELECTION STYLES */
@@ -127,7 +132,6 @@ h1 {
 	height: auto;
 	top: 50%;
 	text-align: center;
-	font-family: EskapadeFraktur-Regular;
 	color: black;
 	font-size: 65px;
 	line-height: 126px;

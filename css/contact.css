@@ -6,9 +6,10 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: "eskapade-fraktur", serif;
+	font-family: "eskapade-fraktur", EskapadeFraktur-Regular, serif;
 	background-color:#EFEFEF;
 }
+
 
 .fiftyfifty {
     width: 50%;
