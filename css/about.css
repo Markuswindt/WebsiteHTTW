@@ -173,7 +173,7 @@ a {
 	top: 20%;
 	position: absolute;
 	left: 25%;
-	background: url(../images/about/../images/about/profile.jpg);
+	background: url(../images/about/profile.jpg);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
