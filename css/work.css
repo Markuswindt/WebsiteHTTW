@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400');
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -102,8 +104,8 @@ body {
 .wrap {
 	*border: 1px dashed black;
 	position: absolute;
-	height: 85%;
-	top: 15%;
+	height: 75%;
+	top: 25%;
 	width: 100%;
 	left: 0;
 	overflow-x: scroll;
@@ -111,12 +113,18 @@ body {
     white-space:nowrap;
 }
 
-.one {
+
+.element {
 	*border: 1px dashed black;
-	height: 80%;
+	height: 75%;
 	width: 30%;
 	display:inline-block;
     vertical-align:top;
+}
+
+
+.one {
+	
 	margin-left: 11%;
 	background: url(../images/work/0223-2.jpg);
 	background-size: contain;
@@ -124,13 +132,25 @@ body {
 	background-position: center;
 }
 
+.onetwo {
+	margin-left: 30px;
+	background: url(../images/work/02.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.onethree {
+	margin-left: 30px;
+	background: url(../images/work/23.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 60px;
+}
+
 .two {
-	*border: 1px dashed black;
-	height: 80%;
-	width: 30%;
-	display:inline-block;
-    vertical-align:top;
-	margin-left: 22px;
+	margin-left: 30px;
 	background: url(../images/work/dac.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -138,12 +158,7 @@ body {
 }
 
 .three {
-	*border: 1px dashed black;
-	height: 80%;
-	width: 40%;
-	display:inline-block;
-    vertical-align:top;
-	margin-left: 22px;
+	margin-left: 30px;
 	background: url(../images/work/iga-2.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -152,13 +167,8 @@ body {
 
 
 .four {
-	*border: 1px solid black;
-	height: 80%;
-	width: 30%;
-	display:inline-block;
-    vertical-align:top;
-	margin-left: 22px;
-	background: url(../images/work/0223-1.jpg);
+	margin-left: 30px;
+	background: url(../images/work/iga-1.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -166,17 +176,64 @@ body {
 
 
 .five {
-	*border: 1px solid black;
-	height: 80%;
-	width: 30%;
-	display:inline-block;
-    vertical-align:top;
-	margin-left: 22px;
-	background: url(../images/work/iga-1.jpg);
+	margin-left: 30px;
+	background: url(../images/work/iga4.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 60px;
+}
+
+.six {
+	margin-left: 30px;
+	background: url(../images/work/hunter.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.seven {
+	margin-left: 30px;
+	background: url(../images/work/bayer.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.eight {
+	margin-left: 30px;
+	background: url(../images/work/mykita.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.eight {
+	margin-left: 30px;
+	background: url(../images/work/de.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.ten {
+	margin-left: 30px;
+	background: url(../images/work/moritz.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.eleven {
+	margin-left: 30px;
+	background: url(../images/work/david.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 70px;
+}
+
 
 .caption {
 	*border: 1px solid;

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400');
+
 body {
 	margin: 0px;
 	padding: 0px;

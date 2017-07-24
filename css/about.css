@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600');
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -125,7 +127,7 @@ a {
 	width: 90%;
 	left: 5%;
 	text-align: center;
-	font-size: 16px;
+	font-size: 16.4px;
 	font-family: 'Source Code Pro', monospace;
 	text-indent: 6px;
 }
@@ -157,11 +159,13 @@ a {
 	margin-top: -220px;
 	top: 50%;
 	text-align: left;
+	padding-bottom: 44px;
+	font-size: 16px;
 }
 
 .bolder {
 	font-weight: 600;
-	color: white;
+	color: blue;
 }
 
 .smaller {
